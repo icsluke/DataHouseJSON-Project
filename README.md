@@ -4,14 +4,22 @@
 <p>
 <strong>	</strong>
 </p>
+
+<strong>Instructions</strong>
 <p>Included in this project is the input data: data.json and program: script.js
 </p>
 <p>This program was written in javascript and built with node.js.</p>
-<p>To run the program please use node script.js in the project folder in terminal</p>
+<p>To run the program:</p>
+<ul>
+  <li>Have node.js installed</li>
+  <li>Open Terminal/CMD in the project folder.</li>
+  <li>Run the program by typing <code>node script.js</code> and pressing enter.</li>
+</ul>
 
 <p>The program will return output.json in the project folder which contains the compatibility results for each applicant. The results will also be displayed in the terminal window when running script.js</p>
 
-<p>The program starts off by reading data.json which is the given input. It then calculates the average score of each attribute for team members by iterating through the team array. The program then calculates the compatibility of each applicant and then writing their name and score to a JSON object which is then added to an array of scored applicants and then converted to a JSON file called output.json. After the program has calculated and wrote to output.json it reads and prints the contents of output.json back to the user in javascript JSON format.
+<strong>Steps</strong>
+<p>The program starts off by reading data.json which is the given input. It then calculates the average score of each attribute for team members by iterating through the team array in the input JSON file and then stores the average score in their respective variables (avgInt, avgStr, etc...). The program then calculates the compatibility of each applicant by comparing the difference between the team average stats and their own stats. Afterwards writing their name and score to a JSON object which is then added to an JSON array called scored applicants and then converted to a JSON file called output.json. After the program has calculated and wrote to output.json it reads and prints the contents of output.json back to the user in javascript JSON format.
 </p>
 
 <p>
@@ -19,6 +27,7 @@
 
 <p></p>
 
+<strong>Logic</strong>
 <p>
 Looking at the given sample output we see the compatibility score being a decimal number in the tenths position. This made me think that it is interpreted as a percentage. Compatibility with the applicants with the team can be scored like a rubric for grading an assignment: out of 100. This must be modified to out of 1, as the client is requesting the grading to be from 0 to 1.
 </p>
@@ -153,16 +162,14 @@ For example
 <li>This would award John .25 compatibility points.
 </li>
 </ul>
+<li>The comparison is made 3 more times for strength, endurance, and spicyFoodTolerance</li>
 </li>
 </ul>
 
-<p>
-Conclusion:
-</p>
+<strong>Conclusion</strong>
 <ul>
 
 <li>This program takes a JSON input of team members and applicants
-
 
 <li>The average score for each stat is calculated from the team and then compared with each applicant.
 
