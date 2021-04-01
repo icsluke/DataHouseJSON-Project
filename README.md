@@ -157,17 +157,6 @@ For example
 </ul>
 
 <p>
-To properly perform these steps the code:
-</p>
-<ol>
-  <li>Created a class for team members and applicants.</li>
-  <li>Created a new object for team member or applicant in an array of team members or applicants with the inputted stats.</li>
-  <li>After all team member objects and applicant objects have been stored in their respective object array we calculate the average of each stat for the team member. This is done by iterating over the array of team members. The team has an average for each stat which will be used to generate the values needed to calculate applicant's compatibility. </li>
-  <li>Iterate over the array of applicants to calculate their individual compatibility scores. Calculate the applicant's individual compatibility score by subtacting the applicant's individual stat from the team average individual stat. This difference is extracted as an absolute value to account for if the difference is above or below the average. It also removes negatives and makes the math and comparisons cleaner.</li>
-  <li>The main compatibility score of the applicant is calculated by adding the individual compatibility scores together. This main compatibility score is shown with each applicant added.</li>
-</ol>
-
-<p>
 Conclusion:
 </p>
 <ul>
